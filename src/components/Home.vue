@@ -6,7 +6,7 @@ const code = ref("")
 const validity = ref("Enter code to check validity");
 async function checkValidity() {
   try {
-    const response = await axios.get(`https://b54b8e49-34c4-4275-b908-727aadc1e33b-00-157ri02fq3f13.spock.replit.dev/v1/check/${code.value}`);
+    const response = await axios.get(`https://msrewards.onrender.com/v1/check/${code.value}`);
     validity.value = response.data;
   } catch (error) {
     console.error(error);
